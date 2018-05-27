@@ -1,2 +1,2 @@
 # MineSweeper
-MineSweeper game for Ipad made with us modules 
+MineSweeper game for Ipad made with UI modules 
