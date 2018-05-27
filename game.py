@@ -1,3 +1,8 @@
+#  Ethan Armstrong
+#  @explosion33
+#  w.ethan.armstrong@gmail.com
+#  Sunday, May 27, 2018
+
 from genBoard2 import *
 
 import Image
@@ -7,7 +12,6 @@ console.hide_output()
 
 lastS = 0 
 lastB = 0
-
 
 def settings(sender):
 	x,y = ui.get_screen_size()
@@ -66,11 +70,9 @@ def slider(sender):
 	
 	lastS = l['size'].value
 	lastB = l['num'].value
-	
-	
+
 	l["numV"].text = str(v2)
 	l["sizeV"].text = str(v1)
-	
 
 def newStart(sender):
 	l = sender.superview
@@ -83,23 +85,18 @@ def newStart(sender):
 	print("")
 	print(x)
 	print(y)
-	
+
 	v.close()
 	l.close()
 	v.wait_modal()
-	
 
 	print("starting with")
 	print(x)
 	print(y)
 	start(x,y,nName)
-	
-	print("both closed")
-	
-	
 
-	
-	
+	print("both closed")
+
 def start(x,y,name):
 	print("Started")
 	global v
